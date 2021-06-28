@@ -4,14 +4,15 @@
     </div>
 </div>
 <div class="profile__name">
-    <h2>{{name | uppercase}}&nbsp;{{firstName | titlecase}}</h2>
+    <h2>{{firstName | titlecase}}</h2>
 </div>
 <div class="profile__statu">
     <h2>{{statu | titlecase}}</h2>
 </div>
 <ul class="navigation">
-    <li *ngFor="let navigation of navigations" class="navigation__item">
-        <a routerLink="/{{navigation}}" routerLinkActive="router-link-active" class="">
+    <div class="background-active"></div>
+    <li *ngFor="let navigation of navigations" class="navigation__item" #link (click)="active(link)">
+        <a routerLink="/{{navigation}}" routerLinkActive="active" >
             {{navigation | titlecase}}
         </a>
     </li>

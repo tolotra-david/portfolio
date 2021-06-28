@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, AfterViewChecked } from "@angular/core"
 
 @Component({
   selector: 'app-sidebar',
@@ -15,5 +15,31 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  active(link: HTMLLIElement) {
+    this.givePosition(link)
+  }
+
+  loadActive(){
+    const ul: HTMLUListElement | null = document.querySelector(".list")
+    if(ul){
+      let lis: HTMLCollection = ul.children
+      for (let i = 0; i < lis.length; i++) {
+        if(lis[i].className){
+          this.givePosition(lis[i])
+        }
+      }
+    }
+  }
+
+  givePosition(link: any){
+    const backgroundElement: HTMLDivElement | null = document.querySelector(".background-active")
+    if(backgroundElement){
+      const difference = (link.offsetTop - ((backgroundElement.offsetHeight / 2) - (link.offsetHeight / 2)))
+      backgroundElement.style.top = difference + "px"
+    }
+  }
+
 
 }
