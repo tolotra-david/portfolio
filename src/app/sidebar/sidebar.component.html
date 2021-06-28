@@ -1,0 +1,18 @@
+<div class="profile__img">
+    <div class="img__container">
+        <img src="../../assets/images/DSC_0733.jpg" alt="tolotra david">
+    </div>
+</div>
+<div class="profile__name">
+    <h2>{{name | uppercase}}&nbsp;{{firstName | titlecase}}</h2>
+</div>
+<div class="profile__statu">
+    <h2>{{statu | titlecase}}</h2>
+</div>
+<ul class="navigation">
+    <li *ngFor="let navigation of navigations" class="navigation__item">
+        <a routerLink="/{{navigation}}" routerLinkActive="router-link-active" class="">
+            {{navigation | titlecase}}
+        </a>
+    </li>
+</ul>
