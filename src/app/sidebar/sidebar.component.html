@@ -3,17 +3,15 @@
         <img src="../../assets/images/DSC_0733.jpg" alt="tolotra david">
     </div>
 </div>
-<div class="profile__name">
-    <h2>{{firstName | titlecase}}</h2>
-</div>
-<div class="profile__statu">
-    <h2>{{statu | titlecase}}</h2>
-</div>
+<h2 class="profile__name">{{firstName | titlecase}}</h2>
 <ul class="navigation">
-    <div class="background-active"></div>
-    <li *ngFor="let navigation of navigations" class="navigation__item" #link (click)="active(link)">
-        <a routerLink="/{{navigation}}" routerLinkActive="active" >
+    <li>
+        <h2>{{statu | titlecase}}</h2>
+    </li>
+    <li *ngFor="let navigation of navigations" #link (click)="givePosition(link)" routerLinkActive="active">
+        <a routerLink="/{{navigation}}">
             {{navigation | titlecase}}
         </a>
     </li>
+    <li class="background-active"></li>
 </ul>

@@ -1,0 +1,35 @@
+.skill h4 {
+    text-decoration-line: underline;
+}
+
+.performance-width,
+.performance__backgroung {
+    height       : 5px;
+    width        : 100%;
+    position     : relative;
+    border-radius: 2px;
+}
+
+.performance-width {
+    width              : 0;
+    transition: width ease-in-out;
+}
+
+
+.performance__backgroung {
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.round {
+    position     : absolute;
+    width        : 20px;
+    height       : 20px;
+    border-radius: 50%;
+    right        : 0;
+    transform    : translate(50%, -35%);
+}
+
+.round__word {
+    position: absolute;
+    top     : -80%;
+}

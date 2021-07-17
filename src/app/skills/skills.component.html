@@ -1,1 +1,11 @@
-<p>skills works!</p>
+<h1>My Skills</h1>
+<div class="description">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, alias, accusamus.</p>
+</div>
+<div class="skills">
+    <app-progress-bar 
+        *ngFor="let skill of skills" 
+        [skillName]="skill.langage" 
+        [skillColor]="skill.color" 
+        [skillValue]="skill.width"></app-progress-bar>
+</div>

@@ -17,16 +17,16 @@ export class SidebarComponent implements OnInit {
   }
 
 
-  active(link: HTMLLIElement) {
-    this.givePosition(link)
+  ngAfterViewChecked(): void {
+    this.loadActive()
   }
 
   loadActive(){
-    const ul: HTMLUListElement | null = document.querySelector(".list")
+    const ul: HTMLUListElement | null = document.querySelector(".navigation")
     if(ul){
       let lis: HTMLCollection = ul.children
       for (let i = 0; i < lis.length; i++) {
-        if(lis[i].className){
+        if(lis[i].className === 'active'){
           this.givePosition(lis[i])
         }
       }

@@ -12,7 +12,8 @@ body {
     padding: 0;
 }
 
-img{
+/* NEED for ajusting the images display */
+img {
     display           : block;
     height            : 100%;
     width             : 100%;

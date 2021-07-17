@@ -3,12 +3,15 @@
         <img src="../../assets/images/DSC_0733.jpg" alt="tolotra david">
     </div>
 </div>
+<div class="home__name">
+    <h1>{{firstName | uppercase}}&nbsp;{{lastName | titlecase}}</h1>
+</div>
 <div class="home__description">
     <div class="description">
         <p>{{description}}</p>
     </div>
     <div class="button__more">
-        <button><a [routerLink]="['/about']" routerLinkActive="router-link-active" >Learn more about me</a></button>
-    </div>
+        <button><a [routerLink]="['/about']" >Learn more about me</a></button>
+    </div> 
 </div>
 

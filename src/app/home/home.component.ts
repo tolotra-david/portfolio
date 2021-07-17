@@ -14,6 +14,9 @@ export class HomeComponent implements OnInit {
     vitae, dignissimos debitis accusamus, obcaecati at. 
     Consequuntur quisquam explicabo placeat tenetur provident adipisci.`
 
+  firstName: string = "rakotonirina"
+  lastName: string = "tolotra david"
+
   constructor() { }
 
   ngOnInit(): void {

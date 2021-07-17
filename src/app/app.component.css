@@ -16,5 +16,6 @@
     width: 100%;
     border: 1px solid yellow;
     width: 100%;
-    overflow: hidden;
+    overflow-Y: auto;
+    padding: 20px;
 }
