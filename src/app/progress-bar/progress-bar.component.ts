@@ -44,7 +44,7 @@ export class ProgressBarComponent implements OnInit {
         this.count = count + "%"
       }
     }
-    let value = setInterval(setValue, 30)
+    let value = setInterval(setValue, 27)
   }
 
   getSkillValueSecond() {

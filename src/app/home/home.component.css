@@ -92,11 +92,15 @@
         border-radius: 50%;
     }
 
+    .home__name h1 {
+        font-size: medium;
+    }
+
     .home__description .description p {
         width     : 80%;
         margin    : auto;
         text-align: justify;
-        font-size : larger;
+        font-size : smaller;
     }
 
     .home__description .button__more {
@@ -105,4 +109,7 @@
         margin-top: 20px;
     }
 
+    .home__description .button__more button {
+        font-size: smaller;
+    }
 }
