@@ -1,13 +1,16 @@
 <div class="skill">
-    <h4>{{skillName}}</h4>
-    <div class="progress-bar">
-        <div class="performance__backgroung">
-            <div class="performance-width" [style.backgroundColor]="skillColor" [style.width]="width"
-                [style.transitionDuration]="getSkillValueSecond()">
-                <span class="round" [style.backgroundColor]="skillColor">
-                    <span class="round__word">{{count}}</span>
-                </span>
-            </div>
-        </div>
+  <h4>{{ skillName }}</h4>
+  <div class="progress-bar">
+    <div class="performance__backgroung">
+      <div
+        class="performance-width"
+        [style.width]="width"
+        [style.transitionDuration]="skillProgress"
+      >
+        <span class="round">
+          <span class="round__word">{{ count }}</span>
+        </span>
+      </div>
     </div>
+  </div>
 </div>

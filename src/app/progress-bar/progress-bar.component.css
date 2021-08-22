@@ -12,9 +12,16 @@
 
 .performance-width {
     width              : 0;
-    transition: width ease-in-out;
+    transition: width ease-out;
+    transition-delay: .1s;
+    animation-name: colorTransition;
+    animation-duration: 3s;
+    background-color: #0275d8;
 }
 
+.initial-color{
+    color: blue;
+}
 
 .performance__backgroung {
     border: 1px solid rgb(197, 197, 197);
@@ -27,9 +34,17 @@
     border-radius: 50%;
     right        : 0;
     transform    : translate(50%, -35%);
+    background-color: #0275d8;
 }
 
 .round__word {
     position: absolute;
     top     : -80%;
+}
+
+/* ANIMATIONS */
+
+@keyframes colorTransition {
+    from{background-color: #d9534f;}
+    to{background-color: #0275d8;}
 }

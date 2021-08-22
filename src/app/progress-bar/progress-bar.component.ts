@@ -5,7 +5,7 @@ import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
   templateUrl: './progress-bar.component.html',
   styleUrls: ['./progress-bar.component.css']
 })
-export class ProgressBarComponent implements OnInit {
+export class ProgressBarComponent implements OnInit, AfterViewInit {
 
   @Input() skillName: string = ''
   @Input() skillValue: number = 0
@@ -13,12 +13,16 @@ export class ProgressBarComponent implements OnInit {
   width: string = ''
   count: string = ''
   constructor() {
-    this.setWidth()
-    this.setSkill()
+
   }
 
   ngOnInit(): void {
 
+  }
+
+  ngAfterViewInit(): void {
+    this.setWidth()
+    this.setSkill()
   }
 
   calculateWidth() {
@@ -47,7 +51,7 @@ export class ProgressBarComponent implements OnInit {
     let value = setInterval(setValue, 27)
   }
 
-  getSkillValueSecond() {
+  get skillProgress() {
     return (this.skillValue * 30) + "ms"
   }
 }
