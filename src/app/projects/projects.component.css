@@ -1,8 +1,13 @@
+.title {
+    color: darkslategray;
+}
+
 .card__container {
+    width: 100%;
     display              : grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    row-gap              : 5px;
-    column-gap           : 50px;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    row-gap              : 15px;
+    column-gap           : 15px;
     margin-top           : 50px;
 }
 

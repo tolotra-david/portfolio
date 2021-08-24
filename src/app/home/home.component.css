@@ -8,21 +8,16 @@
 
 .home__img__container {
     display      : inline-block;
-    width        : 500px;
-    height       : 250px;
-    overflow     : hidden;
-    /* border-radius: 50%; */
-}
-
-.home__img__container img {
-    transform      : scale(1.4);
+    width        : 80%;
+    height       : 100%;
 }
 
 .home__name h1 {
+    margin-top: 20px;
     font-size  : x-large;
     text-align : center;
     font-weight: bolder;
-    color: darkcyan;
+    color: darkslategray;
 }
 
 .home__description {
@@ -32,8 +27,11 @@
 .home__description .description p {
     width     : 60%;
     margin    : auto;
-    text-align: justify;
-    font-size : medium;
+    text-align: center;
+    color: orangered;
+    font-style: italic;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home__description .button__more {
@@ -57,7 +55,7 @@
 }
 
 .home__description .button__more button a{
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* RESPONSIVE */

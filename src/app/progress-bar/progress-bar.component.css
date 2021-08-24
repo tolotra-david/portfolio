@@ -1,6 +1,6 @@
 .skill h2 {
     text-decoration-line: underline;
-    color: darkcyan;
+    color: darkslategray;
 }
 
 .performance-width,
@@ -17,7 +17,7 @@
     transition-delay: .1s;
     animation-name: colorTransition;
     animation-duration: 3s;
-    background-color: darkcyan;
+    background-color: rgb(109, 0, 156);
 }
 
 .performance__backgroung {
@@ -31,7 +31,7 @@
     border-radius: 50%;
     right        : 0;
     transform    : translate(50%, -35%);
-    background-color: darkcyan;
+    background-color: rgb(109, 0, 156);
 }
 
 .round__word {
@@ -45,5 +45,5 @@
 
 @keyframes colorTransition {
     from{background-color: white;}
-    to{background-color: darkcyan;}
+    to{background-color: rgb(109, 0, 156);}
 }

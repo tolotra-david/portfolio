@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
       techno: 'php v.7, mysql, bootstrap 4',
       img: '../../assets/images/phpmysql.png',
       class: 'phpmysql'
-    },
+    }
   ]
   constructor() { }
 

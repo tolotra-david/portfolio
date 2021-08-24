@@ -7,13 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  description: string = `Lorem ipsum dolor, sit 
-    amet consectetur adipisicing elit. 
-    Deserunt, nemo. Porro cumque asperiores 
-    corrupti molestiae consequuntur, sapiente 
-    vitae, dignissimos debitis accusamus, obcaecati at. 
-    Consequuntur quisquam explicabo placeat tenetur provident adipisci.`
-
   firstName: string = "rakotonirina"
   lastName: string = "tolotra david"
 
