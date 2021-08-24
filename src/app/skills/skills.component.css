@@ -1,10 +1,18 @@
+h1{
+    color: rgb(125, 54, 224);
+}
+
 .description {
     margin-top: 20px;
 }
 
+.description p{
+    color: gray;
+}
+
 .skills {
     display              : grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
     grid-auto-rows       : 80px;
     row-gap              : 5px;
     column-gap           : 80px;

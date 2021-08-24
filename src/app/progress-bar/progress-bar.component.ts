@@ -9,7 +9,6 @@ export class ProgressBarComponent implements OnInit, AfterViewInit {
 
   @Input() skillName: string = ''
   @Input() skillValue: number = 0
-  @Input() skillColor: string = ''
   width: string = ''
   count: string = ''
   constructor() {

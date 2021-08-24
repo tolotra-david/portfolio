@@ -1,45 +1,50 @@
-import {Component, OnInit, AfterViewChecked } from "@angular/core"
+import {
+  Component,
+  OnInit,
+  AfterViewChecked,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent implements OnInit, AfterViewChecked {
+  name: string = 'rakotorina';
+  firstName: string = 'tolotra david';
+  statu: string = 'frontend developer';
+  navigations: Array<string> = ['home', 'skills', 'projects'];
 
-  name: string = 'rakotorina'
-  firstName: string = 'tolotra david'
-  statu: string = 'frontend developer'
-  navigations: Array<string> = ['home', 'about', 'skills', 'projects']
-  constructor() { }
+  @ViewChild('navigationMenu')
+  private navigationMenu: ElementRef;
 
-  ngOnInit(): void {
-  }
+  @ViewChild('backgroundActive')
+  private backgroundActive: ElementRef;
+  constructor() {}
 
+  ngOnInit(): void {}
 
   ngAfterViewChecked(): void {
-    this.loadActive()
+    this.loadActive();
   }
 
-  loadActive(){
-    const ul: HTMLUListElement | null = document.querySelector(".navigation")
-    if(ul){
-      let lis: HTMLCollection = ul.children
-      for (let i = 0; i < lis.length; i++) {
-        if(lis[i].className === 'active'){
-          this.givePosition(lis[i])
-        }
+  loadActive() {
+    const ul: HTMLUListElement = this.navigationMenu.nativeElement;
+    let menus: HTMLCollection = ul.children;
+    for (let i = 0; i < menus.length; i++) {
+      if (menus[i].className === 'active') {
+        this.givePosition(menus[i] as HTMLElement);
       }
     }
   }
 
-  givePosition(link: any){
-    const backgroundElement: HTMLDivElement | null = document.querySelector(".background-active")
-    if(backgroundElement){
-      const difference = (link.offsetTop - ((backgroundElement.offsetHeight / 2) - (link.offsetHeight / 2)))
-      backgroundElement.style.top = difference + "px"
-    }
+  givePosition(link: HTMLElement) {
+    const backgroundElement = this.backgroundActive.nativeElement;
+    const difference =
+      link.offsetTop -
+      (backgroundElement.offsetHeight / 2 - link.offsetHeight / 2);
+    backgroundElement.style.top = difference + 'px';
   }
-
-
 }

@@ -7,19 +7,19 @@
 }
 
 .sidebar {
-    width: calc(100% / 3);
-    border: 1px solid red;
+    width: 30%;
     overflow: hidden;
     opacity: 1;
     transition: all ease-out .3s;
+    background-color: #121212;
 }
 
 .pages {
     width: 100%;
-    border: 1px solid yellow;
     width: 100%;
     overflow-Y: auto;
     padding: 20px;
+    background-color: lightcyan;
 }
 
 @media only screen and (max-width: 768px){

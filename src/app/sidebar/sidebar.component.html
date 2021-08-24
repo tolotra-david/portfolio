@@ -1,17 +1,22 @@
 <div class="profile__img">
-    <div class="img__container">
-        <img src="../../assets/images/DSC_0733.jpg" alt="tolotra david">
-    </div>
+  <div class="img__container">
+    <img src="../../assets/images/DSC_0733.jpg" alt="tolotra david" />
+  </div>
 </div>
-<h2 class="profile__name">{{firstName | titlecase}}</h2>
-<ul class="navigation">
-    <li>
-        <h2>{{statu | titlecase}}</h2>
-    </li>
-    <li *ngFor="let navigation of navigations" #link (click)="givePosition(link)" routerLinkActive="active">
-        <a routerLink="/{{navigation}}">
-            {{navigation | titlecase}}
-        </a>
-    </li>
-    <li class="background-active"></li>
+<h3 class="profile__name">{{ firstName | titlecase }}</h3>
+<ul class="navigation" #navigationMenu>
+  <li>
+    <h2>{{ statu | titlecase }}</h2>
+  </li>
+  <li
+    *ngFor="let navigation of navigations"
+    #link
+    (click)="givePosition(link)"
+    routerLinkActive="active"
+  >
+    <a routerLink="/{{ navigation }}">
+      {{ navigation | titlecase }}
+    </a>
+  </li>
+  <div class="background-active" #backgroundActive></div>
 </ul>

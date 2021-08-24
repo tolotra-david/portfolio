@@ -1,5 +1,6 @@
-.skill h4 {
+.skill h2 {
     text-decoration-line: underline;
+    color: darkcyan;
 }
 
 .performance-width,
@@ -16,11 +17,7 @@
     transition-delay: .1s;
     animation-name: colorTransition;
     animation-duration: 3s;
-    background-color: #0275d8;
-}
-
-.initial-color{
-    color: blue;
+    background-color: darkcyan;
 }
 
 .performance__backgroung {
@@ -34,17 +31,19 @@
     border-radius: 50%;
     right        : 0;
     transform    : translate(50%, -35%);
-    background-color: #0275d8;
+    background-color: darkcyan;
 }
 
 .round__word {
     position: absolute;
+    font-size: large;
+    font-style: italic;
     top     : -80%;
 }
 
 /* ANIMATIONS */
 
 @keyframes colorTransition {
-    from{background-color: #d9534f;}
-    to{background-color: #0275d8;}
+    from{background-color: white;}
+    to{background-color: darkcyan;}
 }

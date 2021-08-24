@@ -11,7 +11,7 @@ export class SkillsComponent implements OnInit {
     { langage: "HTML & CSS", width: 90, color: 'blue' },
     { langage: "JAVASCRIPT & TYPESCRIPT", width: 80, color: 'orange' },
     { langage: "ANGULAR/ANGULAR MATERIAL", width: 80, color: 'blue' },
-    { langage: "PHP/SYMFONY", width: 80, color: 'blue' },
+    { langage: "PHP", width: 80, color: 'blue' },
   ]
   isLoaded = false
 
