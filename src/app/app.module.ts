@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule} from '@angular/material/icon'
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

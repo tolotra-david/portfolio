@@ -10,9 +10,9 @@
   </li>
   <li
     *ngFor="let navigation of navigations"
-    #link
-    (click)="givePosition(link)"
     routerLinkActive="active"
+    #link
+    (click)="givePosition(link); giveOutput()"
   >
     <a routerLink="/{{ navigation }}">
       {{ navigation | titlecase }}

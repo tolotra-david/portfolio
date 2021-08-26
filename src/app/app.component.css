@@ -1,3 +1,7 @@
+:host{
+    display: block;
+}
+
 .root {
     width: 100%;
     display: flex;
@@ -10,7 +14,7 @@
     width: 30%;
     overflow: hidden;
     opacity: 1;
-    transition: all ease-out .3s;
+    transition: all ease-out 60ms;
     background-color: #121212;
 }
 
@@ -22,9 +26,18 @@
     background-color: lightcyan;
 }
 
-@media only screen and (max-width: 768px){
+.close{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(109, 0, 156);
+}
+
+@media only screen and (max-width: 770px){
     .sidebar{
         width: 0;
-        opacity: 0;
-    }
+        position: absolute;
+        height: 100%;
+        z-index: 1000 !important;
+    }    
 }

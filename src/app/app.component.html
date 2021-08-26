@@ -1,8 +1,14 @@
 <div class="root">
-  <div class="sidebar">
-    <app-sidebar></app-sidebar>
+  <div class="sidebar" #sidebar>
+    <app-sidebar (isClicked)="isHidden($event)"></app-sidebar>
   </div>
   <div class="pages">
     <router-outlet></router-outlet>
   </div>
+  <button mat-mini-fab class="close" (click)="onOpenMenu()" *ngIf="isMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-mini-fab class="close" (click)="onCloseMenu()" *ngIf="isClose">
+    <mat-icon>close</mat-icon>
+  </button>
 </div>
