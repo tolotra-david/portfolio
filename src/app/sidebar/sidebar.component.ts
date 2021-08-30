@@ -20,7 +20,7 @@ export class SidebarComponent
   name: string = 'rakotorina';
   firstName: string = 'tolotra david';
   statu: string = 'frontend developer';
-  navigations: Array<string> = [];
+  navigations: Array<any> = [];
 
   @ViewChild('navigationMenu')
   private navigationMenu: ElementRef;
@@ -33,7 +33,25 @@ export class SidebarComponent
   constructor() {}
 
   ngOnInit(): void {
-    this.navigations = ['accueil', 'competences', 'projets'];
+    
+    this.navigations = [
+      {
+        icon: 'home',
+        name: 'accueil'
+      },
+      {
+        icon: 'bookmark',
+        name: 'competences'
+      },
+      {
+        icon: 'build',
+        name: 'projets'
+      },
+      {
+        icon: 'person',
+        name: 'a propos'
+      },
+    ];
   }
 
   ngAfterViewChecked(): void {

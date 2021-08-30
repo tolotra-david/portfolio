@@ -13,8 +13,9 @@
     #link
     (click)="givePosition(link); giveOutput()"
   >
-    <a routerLink="/{{ navigation }}">
-      {{ navigation | titlecase }}
+  <a routerLink="/{{ navigation.name }}">
+    <mat-icon class="material__icon">{{navigation.icon}}</mat-icon>
+      {{ navigation.name | titlecase }}
     </a>
   </li>
 </ul>

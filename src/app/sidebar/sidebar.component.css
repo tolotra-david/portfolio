@@ -53,7 +53,7 @@
   color: white;
   text-align: center;
   color: var(--title-color);
-  font-family: var(--title-font-family);
+  font-family: var(--title-font-family) !important;
 }
 
 .navigation li a {
@@ -62,6 +62,15 @@
   font-size: smaller;
   color: var(--link-color);
 }
+
+.material__icon {
+  font-size: medium;
+  color: rebeccapurple;
+}
+
+li.active :first-child{
+  color: var(--link-color);
+} 
 
 .background-active {
   width: 100%;
