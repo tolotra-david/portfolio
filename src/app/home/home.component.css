@@ -9,12 +9,13 @@
 
 .home__description__container {
   width: 50%;
-  position: relative;
 }
 
 .description__slogan {
   color: var(--title-color);
   text-align: justify;
+  font-family: var(--title-font-family);
+  font-size: 50px;
 }
 
 .description__name {
@@ -24,7 +25,6 @@
 .description__slogan,
 .description__name {
   font-style: italic;
-  margin-bottom: 60px;
 }
 
 .description__button {
@@ -48,32 +48,32 @@
 /* PHONE */
 @media only screen and (max-width: 768px) {
   .home__root {
-    background-size: 40%;
+    background-position: center center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: start;
   }
 
   .home__description__container {
-    width: 60%;
+    width: 80%;
+    height: 80%;
+    position: relative;
   }
 
   .description__slogan {
     text-align: left;
+    font-size: 30px;
+  }
+
+  .description__name {
     font-size: medium;
-  }
-
-  .description__name {
-    font-size: small;
-  }
-
-  .description__slogan,
-  .description__name {
-    font-style: italic;
   }
 
   .description__button {
     width: 100%;
     margin: auto;
     position: absolute;
-    right: -40%;
+    bottom: 0;
   }
 
   .description__button button {

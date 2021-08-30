@@ -4,10 +4,9 @@
   </div>
 </div>
 <h3 class="profile__name">{{ firstName | titlecase }}</h3>
+<h2 class="profile__statut">{{ statu | titlecase }}</h2>
 <ul class="navigation" #navigationMenu>
-  <li>
-    <h2>{{ statu | titlecase }}</h2>
-  </li>
+  <div class="background-active" #backgroundActive></div>
   <li
     *ngFor="let navigation of navigations"
     routerLinkActive="active"
@@ -18,5 +17,4 @@
       {{ navigation | titlecase }}
     </a>
   </li>
-  <div class="background-active" #backgroundActive></div>
 </ul>
