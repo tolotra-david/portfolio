@@ -78,5 +78,6 @@ export class SidebarComponent
     const backgroundElement: HTMLDivElement = this.backgroundActive.nativeElement;
     backgroundElement.style.height = link.offsetHeight + "px"
     backgroundElement.style.transform = "translateY(" + link.offsetTop + "px)";
+    console.log('repétion:');
   }
 }
