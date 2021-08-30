@@ -13,12 +13,12 @@
 }
 
 .description__slogan {
-  color: var(--main-title-color);
+  color: var(--title-color);
   text-align: justify;
 }
 
 .description__name {
-  color: var(--main-name-color);
+  color: var(--name-color);
 }
 
 .description__slogan,
@@ -35,14 +35,14 @@
 .description__button button {
   display: inline-block;
   width: 100%;
-  background-image: var(--main-bg-color);
+  background-image: var(--bg-color);
   padding: 10px;
   border: none;
-  box-shadow: 0px 0px 4px var(--main-blur-color);
+  box-shadow: 0px 0px 4px var(--blur-color);
 }
 
 .description__button button a {
-  color: var(--main-link-color);
+  color: var(--link-color);
 }
 
 /* PHONE */
@@ -79,13 +79,13 @@
   .description__button button {
     display: inline-block;
     width: 100%;
-    background-image: var(--main-bg-color);
+    background-image: var(--bg-color);
     padding: 10px;
     border: none;
-    box-shadow: 0px 0px 4px var(--main-blur-color);
+    box-shadow: 0px 0px 4px var(--blur-color);
   }
 
   .description__button button a {
-    color: var(--main-link-color);
+    color: var(--link-color);
   }
 }

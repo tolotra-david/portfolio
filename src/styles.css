@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 html,
 body {
     height: 100%;
-    --main-bg-color: linear-gradient(90deg, darkmagenta, rebeccapurple);
-    --main-title-color: yellow;
-    --main-link-color: white;
-    --main-name-color: whitesmoke;
-    --main-description-color: rgba(255, 255, 255, 0.7);
-    --main-blur-color: white;
+    --bg-color: linear-gradient(90deg, darkmagenta, rebeccapurple);
+    --title-color: yellow;
+    --link-color: white;
+    --name-color: whitesmoke;
+    --description-color: rgba(255, 255, 255, 0.7);
+    --blur-color: white;
     --sidebar-bg-color: #121212;
+    --title-font-family: 'Dancing Script', cursive;
+    --text-font-famil: "Roboto", "Helvetica Neue", sans-serif;;
 }
 
 body {
@@ -18,6 +22,7 @@ body {
     box-sizing: border-box;
     padding: 0;
 }
+
 
 /* NEED for ajusting the images display */
 img {
