@@ -1,23 +1,18 @@
-h1{
-    color: var(--title-color);
-    font-family: var(--title-font-family);
+h1 {
+  color: var(--title-color);
+  font-family: var(--title-font-family);
 }
 
 .description {
-    margin-top: 20px;
-}
-
-.description p{
-    color: var(--description-color);
+  margin-top: 20px;
+  color: var(--description-color);
 }
 
 .skills {
-    width: 100%;
-    display              : grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    grid-auto-rows       : 110px;
-    row-gap              : 5px;
-    column-gap           : 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: 110px;
+  row-gap: 5px;
+  column-gap: 80px;
 }
-
-

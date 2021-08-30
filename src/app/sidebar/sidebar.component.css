@@ -28,7 +28,14 @@
 .profile__name {
   text-align: center;
   overflow: hidden;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--name-color);
+}
+
+.profile__statut {
+  color: white;
+  text-align: center;
+  color: var(--title-color);
+  font-family: var(--title-font-family) !important;
 }
 
 .navigation {
@@ -44,41 +51,33 @@
   list-style-type: none;
   font-size: 18px;
   text-align: start;
-  display: block;
   padding: 5px 0;
   margin-bottom: 2px;
-}
-
-.profile__statut{
-  color: white;
-  text-align: center;
-  color: var(--title-color);
-  font-family: var(--title-font-family) !important;
+  display: flex;
+  justify-content: start;
 }
 
 .navigation li a {
   display: block;
-  padding-left: 10px;
   font-size: smaller;
   color: var(--link-color);
 }
 
 .material__icon {
-  font-size: medium;
+  font-size: smaller;
   color: rebeccapurple;
 }
 
-li.active :first-child{
+li.active :first-child {
   color: var(--link-color);
-} 
+}
 
 .background-active {
   width: 100%;
   background-image: var(--bg-color);
   border-radius: 8px;
   position: absolute;
-  transition-delay: 0.1s;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   margin: auto;
   z-index: -1;
 }
@@ -98,4 +97,6 @@ li.active :first-child{
   .img__container img {
     transform: scale(1.5);
   }
+
+  
 }

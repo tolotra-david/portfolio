@@ -1,10 +1,11 @@
 <h1>Mes compétences</h1>
-<div class="description">
-    <p>Vous pouvez voir mon niveau avec les différentes technologies web ici !</p>
-</div>
+<p class="description">
+  Vous pouvez voir mon niveau avec les différentes technologies web ici !
+</p>
 <div class="skills">
-    <app-progress-bar 
-        *ngFor="let skill of skills" 
-        [skillName]="skill.langage" 
-        [skillValue]="skill.width"></app-progress-bar>
+  <app-progress-bar
+    *ngFor="let skill of skills"
+    [skillName]="skill.langage"
+    [skillValue]="skill.width"
+  ></app-progress-bar>
 </div>

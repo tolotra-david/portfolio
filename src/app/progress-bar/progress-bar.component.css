@@ -1,6 +1,7 @@
-.skill h2 {
+.skill h3 {
     text-decoration-line: underline;
-    color: darkslategray;
+    color: var(--name-color);
+    margin-bottom: 40px;
 }
 
 .performance-width,
@@ -17,11 +18,11 @@
     transition-delay: .1s;
     animation-name: colorTransition;
     animation-duration: 3s;
-    background-color: rgb(109, 0, 156);
+    background-color: var(--title-color);
 }
 
 .performance__backgroung {
-    border: 1px solid rgb(197, 197, 197);
+    border: 1px solid var(--name-color);
 }
 
 .round {
@@ -31,19 +32,26 @@
     border-radius: 50%;
     right        : 0;
     transform    : translate(50%, -35%);
-    background-color: rgb(109, 0, 156);
+    background-color: orange;
 }
 
 .round__word {
     position: absolute;
     font-size: large;
     font-style: italic;
-    top     : -80%;
+    top     : -100%;
+    color: var(--description-color);
 }
 
 /* ANIMATIONS */
 
 @keyframes colorTransition {
     from{background-color: white;}
-    to{background-color: rgb(109, 0, 156);}
+    to{background-color: var(--title-color);}
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px){
+    
 }
