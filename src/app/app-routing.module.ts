@@ -19,7 +19,7 @@ const routes: Routes = [
     component: ProjectsComponent,
   },
   {
-    path: 'comptences',
+    path: 'competences',
     component: SkillsComponent,
   },
   {

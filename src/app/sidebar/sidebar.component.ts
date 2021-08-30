@@ -31,7 +31,7 @@ export class SidebarComponent implements OnInit, AfterViewChecked, AfterViewInit
   constructor() {}
 
   ngOnInit(): void {
-    this.navigations = ['home', 'skills', 'projects']
+    this.navigations = ['accueil', 'competences', 'projets']
   }
 
   ngAfterViewChecked(): void {
