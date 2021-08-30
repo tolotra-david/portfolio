@@ -15,7 +15,7 @@
   color: var(--title-color);
   text-align: justify;
   font-family: var(--title-font-family);
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .description__name {
