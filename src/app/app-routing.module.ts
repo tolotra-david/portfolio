@@ -11,20 +11,20 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'home',
+    path: 'accueil',
     component: HomeComponent,
   },
   {
-    path: 'projects',
+    path: 'projets',
     component: ProjectsComponent,
   },
   {
-    path: 'skills',
+    path: 'comptences',
     component: SkillsComponent,
   },
   {
     path: '**',
-    redirectTo: '/home',
+    redirectTo: '/accueil',
   }
 ];
 
