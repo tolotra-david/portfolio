@@ -16,7 +16,7 @@
     overflow: hidden;
     opacity: 1;
     transition: all ease-out 60ms;
-    background-color: #121212;
+    background-color: var(--sidebar-bg-color);
 }
 
 .pages {
@@ -24,15 +24,14 @@
     height: 100%;
     overflow-Y: auto;
     padding: 20px;
-    color: rebeccapurple;
-    background-image: linear-gradient(90deg, darkmagenta, rebeccapurple);
+    background-image: var(--main-bg-color);
 }
 
 .close{
     position: fixed;
     right: 10px;
     top: 10px;
-    background-color: darkmagenta;
+    background-color: var(--main-bg-color);
     box-shadow: 0px 0px 4px white;
 }
 

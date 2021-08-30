@@ -1,8 +1,19 @@
-<div class="home__img">
-    <div class="home__img__container">
-        <img src="/assets/images/font.jpg" alt="tolotra david">
+<div class="home__root">
+  <div class="home__description__container">
+    <h1 class="description__slogan">
+      "J’aime énormément mon métier et prends un plaisir à exercer."
+    </h1>
+    <h1 class="description__name">
+      {{ firstName | uppercase }}&nbsp;{{ lastName | titlecase }}
+    </h1>
+    <div class="description__button">
+      <button>
+        <a [routerLink]="['/skills']">Voir mes compétences &rarr;</a>
+      </button>
     </div>
+  </div>
 </div>
+<<<<<<< HEAD
 <div class="home__name">
     <h1>{{firstName | uppercase}}&nbsp;{{lastName | titlecase}}</h1>
 </div>
@@ -15,3 +26,5 @@
     </div> 
 </div>
 
+=======
+>>>>>>> home

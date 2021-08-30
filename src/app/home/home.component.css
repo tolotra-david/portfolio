@@ -1,119 +1,91 @@
-.home__img {
-    height         : 50%;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    overflow       : hidden;
+.home__root {
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/home-background-image.png") no-repeat right;
+  background-size: 50%;
+  display: flex;
+  align-items: center;
 }
 
-.home__img__container {
-    display      : inline-block;
-    width        : 80%;
-    height       : 100%;
+.home__description__container {
+  width: 50%;
+  position: relative;
 }
 
-.home__name h1 {
-    margin-top: 20px;
-    font-size  : x-large;
-    text-align : center;
-    font-weight: bolder;
-    color: darkslategray;
+.description__slogan {
+  color: var(--main-title-color);
+  text-align: justify;
 }
 
-.home__description {
-    margin-top: 20px;
+.description__name {
+  color: var(--main-name-color);
 }
 
-.home__description .description p {
-    width     : 60%;
-    margin    : auto;
-    text-align: center;
-    color: orangered;
-    font-style: italic;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.description__slogan,
+.description__name {
+  font-style: italic;
+  margin-bottom: 60px;
 }
 
-.home__description .button__more {
-    display      : flex;
-    justify-items: center;
+.description__button {
+  width: 50%;
+  margin: auto;
 }
 
-.home__description .button__more {
-    width     : 30%;
-    margin    : auto;
-    height    : 36px;
-    margin-top: 20px;
+.description__button button {
+  display: inline-block;
+  width: 100%;
+  background-image: var(--main-bg-color);
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 0px 4px var(--main-blur-color);
 }
 
-.home__description .button__more button {
-    width    : 100%;
-    height   : 100%;
-    display  : inline-block;
-    background-color: rgb(109, 0, 156);
-    border: none;
-}
-
-.home__description .button__more button a{
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* RESPONSIVE */
-/* TABLET */
-@media only screen and (max-width: 992px) {
-    .home__img {
-        height         : 35%;
-        display        : flex;
-        align-items    : center;
-        justify-content: center;
-        overflow       : hidden;
-    }
-
-    .home__img__container {
-        display      : inline-block;
-        width        : 170px;
-        height       : 170px;
-        overflow     : hidden;
-        border-radius: 50%;
-    }
+.description__button button a {
+  color: var(--main-link-color);
 }
 
 /* PHONE */
 @media only screen and (max-width: 768px) {
-    .home__img {
-        height         : 45%;
-        display        : flex;
-        align-items    : center;
-        justify-content: center;
-        overflow       : hidden;
-    }
+  .home__root {
+    background-size: 40%;
+  }
 
-    .home__img__container {
-        display      : inline-block;
-        width        : 125px;
-        height       : 125px;
-        overflow     : hidden;
-        border-radius: 50%;
-    }
+  .home__description__container {
+    width: 60%;
+  }
 
-    .home__name h1 {
-        font-size: medium;
-    }
+  .description__slogan {
+    text-align: left;
+    font-size: medium;
+  }
 
-    .home__description .description p {
-        width     : 80%;
-        margin    : auto;
-        text-align: justify;
-        font-size : smaller;
-    }
+  .description__name {
+    font-size: small;
+  }
 
-    .home__description .button__more {
-        width     : 80%;
-        margin    : auto;
-        margin-top: 20px;
-    }
+  .description__slogan,
+  .description__name {
+    font-style: italic;
+  }
 
-    .home__description .button__more button {
-        font-size: smaller;
-    }
+  .description__button {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    right: -40%;
+  }
+
+  .description__button button {
+    display: inline-block;
+    width: 100%;
+    background-image: var(--main-bg-color);
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 4px var(--main-blur-color);
+  }
+
+  .description__button button a {
+    color: var(--main-link-color);
+  }
 }
