@@ -1,1 +1,9 @@
-<p>single-project works!</p>
+<h3 class="project__title">{{ title }}</h3>
+<p class="project__description">{{ description }}</p>
+<p class="project__techno">
+  Voici les technologies web que j'ai utilisé:
+  <i class="project__techno-name">{{ techno }}</i>
+</p>
+<div class="project__image">
+  <img [src]="imgSrc" [alt]="techno" />
+</div>

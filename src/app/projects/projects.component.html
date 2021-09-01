@@ -1,17 +1,10 @@
-<h1 class="title">Les projets que j'ai réalisés récement.</h1>
-
-<div class="card__container">
-    <mat-card class="card" *ngFor="let project of projects">
-        <mat-card-header>
-            <mat-card-title class="img__container">
-                <img mat-card-image class={{project.class}} src={{project.img}} alt="">
-            </mat-card-title>
-            <mat-card-title>{{project.title | uppercase}}</mat-card-title>
-            <mat-card-subtitle>Technology : </mat-card-subtitle>
-            <mat-card-subtitle>{{project.techno | titlecase}}</mat-card-subtitle>
-            <mat-card-subtitle>
-                <button mat-raised-button color="primary">GITLAB LINK</button>
-            </mat-card-subtitle>
-        </mat-card-header>
-    </mat-card>
-</div>
+<h1 class="projects__title">
+  Vous pouvez voir ici quelques projets que j'ai réalisés.
+</h1>
+<app-single-project
+  *ngFor="let project of projects"
+  [title]="project.title"
+  [description]="project.description"
+  [techno]="project.techno"
+  [imgSrc]="project.img"
+></app-single-project>

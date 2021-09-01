@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-single-project',
@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleProjectComponent implements OnInit {
 
+  @Input()
+  title: string
+  @Input()
+  description: string
+  @Input()
+  techno: string
+  @Input()
+  imgSrc: string
   constructor() { }
 
   ngOnInit(): void {
