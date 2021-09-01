@@ -59,14 +59,16 @@
     height: 80%;
     position: relative;
   }
-
+  
   .description__slogan {
+    background-image: var(--bg-color);
     text-align: left;
     font-size: 30px;
   }
 
   .description__name {
     font-size: medium;
+    background-image: var(--bg-color);
   }
 
   .description__button {
