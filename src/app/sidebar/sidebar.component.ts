@@ -19,7 +19,7 @@ export class SidebarComponent
 {
   name: string = 'rakotorina';
   firstName: string = 'tolotra david';
-  statu: string = 'frontend developer';
+  statu: string = 'développeur front-end';
   navigations: Array<any> = [];
 
   @ViewChild('navigationMenu')
@@ -49,7 +49,7 @@ export class SidebarComponent
       },
       {
         icon: 'person',
-        name: 'a propos'
+        name: 'a-propos'
       },
     ];
   }
