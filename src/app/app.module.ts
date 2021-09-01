@@ -14,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SingleProjectComponent } from './single-project/single-project.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SingleProjectComponent } from './single-project/single-project.componen
     SkillsComponent,
     ProjectsComponent,
     ProgressBarComponent,
-    SingleProjectComponent
+    SingleProjectComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
