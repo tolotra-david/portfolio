@@ -29,12 +29,14 @@ ul li {
   text-align: justify;
 }
 
-.about__personal__container {
+.about__personnal-container {
   display: flex;
-  border: solid;
+  justify-content: flex-start;
+  background: url("/assets/images/—Pngtree—simple id card linear icon_6074686.png") no-repeat center right;
+  background-size: contain;
 }
 
-.about__persona-detail {
+.about__personnal-detail {
   width: 50%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
@@ -43,14 +45,11 @@ ul li {
   padding-left: 40px;
 }
 
-.about__persona-detail mat-icon{
+.about__personnal-detail mat-icon{
   font-size: 18px;
   color: var(--icon-color);
 }
 
-.about__personal_image {
-  border: 1px solid;
-}
 
 .about__link {
   display: flex;
@@ -89,10 +88,17 @@ ul li {
 .about__study {
     color: var(--name-color);
     text-align: center;
+    margin-bottom: 40px;
 }
+
 .about__formation{
     color: var(--title-color);
     font-family: var(--title-font-family);
+}
+
+.about__formation-openclassrooms{
+  background: url("/assets/images/kisspng-openclassrooms-marketing-business-management-logo-open-5b487ec131d465.6840017515314776972041.png") no-repeat right;;
+  background-size: contain;
 }
 
 
@@ -114,7 +120,11 @@ ul li {
     font-size: small;
   }
 
-  .about__persona-detail {
+  .about__personnal-container{
+    background: none;
+  }
+
+  .about__personnal-detail {
     width: 100%;
     font-size: small;
   }
