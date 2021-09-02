@@ -11,7 +11,8 @@ body {
     --blur-color: white;
     --sidebar-bg-color: #121212;
     --title-font-family: 'Dancing Script', cursive;
-    --text-font-famil: "Roboto", "Helvetica Neue", sans-serif;;
+    --text-font-famil: "Roboto", "Helvetica Neue", sans-serif;
+    --icon-color: #6879d9;
 }
 
 body {

@@ -54,7 +54,7 @@
   padding: 5px 0;
   margin-bottom: 2px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .navigation li a {

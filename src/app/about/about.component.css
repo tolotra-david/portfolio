@@ -1,9 +1,5 @@
 /* GLOBAL STYLE */
 
-mat-icon {
-  font-size: small;
-}
-
 .underline {
   text-decoration: underline;
 }
@@ -33,22 +29,50 @@ ul li {
   text-align: justify;
 }
 
-.about__personal {
+.about__personal__container {
+  display: flex;
+  border: solid;
+}
+
+.about__persona-detail {
   width: 50%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   color: var(--name-color);
   grid-auto-rows: 40px;
+  padding-left: 40px;
+}
+
+.about__persona-detail mat-icon{
+  font-size: 18px;
+  color: var(--icon-color);
+}
+
+.about__personal_image {
+  border: 1px solid;
 }
 
 .about__link {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0;
+  margin: 10px 0 6px 0;
 }
 
 .about__link li {
   list-style-type: none;
+}
+
+.about__link li a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.about__link li a:hover {
+  transform: scale(1.4);
+  transition-duration: 300ms;
 }
 
 .about__code-source {
@@ -90,8 +114,9 @@ ul li {
     font-size: small;
   }
 
-  .about__personal {
+  .about__persona-detail {
     width: 100%;
     font-size: small;
   }
 }
+
