@@ -1,56 +1,53 @@
-import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
+import { Component, OnInit, Input, AfterViewInit, ViewChild, ElementRef, AfterViewChecked } from '@angular/core';
 
 @Component({
   selector: 'app-progress-bar',
   templateUrl: './progress-bar.component.html',
-  styleUrls: ['./progress-bar.component.css']
+  styleUrls: ['./progress-bar.component.css'],
+  animations: [
+    trigger('progress', [
+      state('void', style({ width: 0 })),
+      transition('void => *', [animate(2500), style({width: '*'})]),
+    ]),
+  ],
 })
-export class ProgressBarComponent implements OnInit, AfterViewInit {
-
-  @Input() skillName: string = ''
-  @Input() skillValue: number = 0
-  width: string = ''
-  count: string = ''
+export class ProgressBarComponent implements OnInit, AfterViewInit, AfterViewChecked {
+  @Input() skillName: string = '';
+  @Input() skillValue: number = 0;
+  count: string = '';
+  @ViewChild('performanceWidth')
+  private performanceWidth: ElementRef
   constructor() {
-
   }
-
+  
   ngOnInit(): void {
-
   }
-
+  
   ngAfterViewInit(): void {
-    this.setWidth()
     this.setSkill()
   }
 
-  calculateWidth() {
-    for (let i = 1; i <= this.skillValue; i++) {
-      this.width = i + "%"
-    }
-  }
-  /**
-   * Give the width step by step
-   */
-  setWidth(): void {
-    setTimeout(() => {
-      this.calculateWidth()
-    }, 300)
+  ngAfterViewChecked(): void {
+    const div: HTMLDivElement = this.performanceWidth.nativeElement
+    div.style.width = this.skillValue + "%"
   }
 
-  setSkill(): void{
-    let count: number = 0
+  setSkill(): void {
+    let count: number = 0;
     const setValue = () => {
-      if (count === this.skillValue) clearInterval(value)
+      if (count === this.skillValue) clearInterval(value);
       else {
-        count++
-        this.count = count + "%"
+        count++;
+        this.count = count + '%';
       }
-    }
-    let value = setInterval(setValue, 27)
-  }
-
-  get skillProgress() {
-    return (this.skillValue * 30) + "ms"
+    };
+    let value = setInterval(setValue, 20);
   }
 }

@@ -6,7 +6,6 @@ import {
   ElementRef,
   Output,
   EventEmitter,
-  AfterViewInit,
 } from '@angular/core';
 
 @Component({
@@ -14,9 +13,7 @@ import {
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css'],
 })
-export class SidebarComponent
-  implements OnInit, AfterViewChecked, AfterViewInit
-{
+export class SidebarComponent implements OnInit, AfterViewChecked {
   name: string = 'rakotorina';
   firstName: string = 'tolotra david';
   statu: string = 'développeur front-end';
@@ -57,11 +54,10 @@ export class SidebarComponent
     this.loadActive();
   }
 
-  ngAfterViewInit(): void {}
-
   loadActive() {
     const ul: HTMLUListElement = this.navigationMenu.nativeElement;
     let menus: HTMLCollection = ul.children;
+    console.log('répétion : ');
     for (let i = 0; i < menus.length; i++) {
       if (menus[i].className === 'active') {
         this.givePosition(menus[i] as HTMLElement);

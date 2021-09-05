@@ -3,9 +3,9 @@
   <div class="progress-bar">
     <div class="performance__backgroung">
       <div
+        #performanceWidth
         class="performance-width"
-        [style.width]="width"
-        [style.transitionDuration]="skillProgress"
+        @progress
       >
         <span class="round">
           <span class="round__word">{{ count }}</span>

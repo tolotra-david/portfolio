@@ -18,7 +18,7 @@
   transition: width ease-out;
   transition-delay: 0.1s;
   animation-name: colorTransition;
-  animation-duration: 2s;
+  animation-duration: 3s;
   background-color: var(--title-color);
 }
 
@@ -48,7 +48,7 @@
 
 @keyframes colorTransition {
   from {
-    background-color: white;
+    background-color: red;
   }
   to {
     background-color: var(--title-color);
