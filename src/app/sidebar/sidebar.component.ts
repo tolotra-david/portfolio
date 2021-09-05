@@ -33,23 +33,22 @@ export class SidebarComponent
   constructor() {}
 
   ngOnInit(): void {
-    
     this.navigations = [
       {
         icon: 'home',
-        name: 'accueil'
+        name: 'accueil',
       },
       {
         icon: 'bookmark',
-        name: 'competences'
+        name: 'competences',
       },
       {
         icon: 'build',
-        name: 'projets'
+        name: 'projets',
       },
       {
         icon: 'person',
-        name: 'a-propos'
+        name: 'a-propos',
       },
     ];
   }
@@ -75,8 +74,9 @@ export class SidebarComponent
   }
 
   givePosition(link: HTMLElement) {
-    const backgroundElement: HTMLDivElement = this.backgroundActive.nativeElement;
-    backgroundElement.style.height = link.offsetHeight + "px"
-    backgroundElement.style.transform = "translateY(" + link.offsetTop + "px)";
+    const backgroundElement: HTMLDivElement =
+      this.backgroundActive.nativeElement;
+    backgroundElement.style.height = link.offsetHeight + 'px';
+    backgroundElement.style.transform = 'translateY(' + link.offsetTop + 'px)';
   }
 }
