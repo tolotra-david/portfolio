@@ -57,7 +57,6 @@ export class SidebarComponent implements OnInit, AfterViewChecked {
   loadActive() {
     const ul: HTMLUListElement = this.navigationMenu.nativeElement;
     let menus: HTMLCollection = ul.children;
-    console.log('répétion : ');
     for (let i = 0; i < menus.length; i++) {
       if (menus[i].className === 'active') {
         this.givePosition(menus[i] as HTMLElement);
