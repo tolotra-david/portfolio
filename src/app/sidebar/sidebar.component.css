@@ -72,6 +72,18 @@ li.active :first-child {
   color: var(--link-color);
 }
 
+.navigation__separation{
+  width: 70%;
+}
+
+.navigation__code-source{
+  border-radius: 8px;
+}
+
+.navigation__code-source:hover{
+  border: 1px solid var(--name-color);
+}
+
 .background-active {
   width: 100%;
   background-image: var(--bg-color);
