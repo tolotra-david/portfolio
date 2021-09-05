@@ -76,11 +76,6 @@ ul li {
   transition-duration: 300ms;
 }
 
-.about__code-source {
-  text-align: center;
-  color: var(--description-color);
-}
-
 .about__code-source a {
   font-size: 20px;
   font-family: var(--title-font-family);
