@@ -65,7 +65,7 @@
 
 .material__icon {
   font-size: smaller;
-  color: rebeccapurple;
+  color: var(--icon-color);
 }
 
 li.active :first-child {
