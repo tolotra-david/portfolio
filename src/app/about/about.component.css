@@ -34,7 +34,7 @@ ul li {
 .about__personnal-container {
   display: flex;
   justify-content: flex-start;
-  background: url("/assets/images/—Pngtree—simple id card linear icon_6074686.png")
+  background: url(~src/assets/images/information-card.png)
     no-repeat center right;
   background-size: contain;
 }
@@ -47,6 +47,7 @@ ul li {
   grid-auto-rows: 40px;
   padding-left: 40px;
 }
+/* 0342708542 */
 
 .about__personnal-detail mat-icon {
   font-size: 18px;
@@ -94,7 +95,7 @@ ul li {
 }
 
 .about__formation-openclassrooms {
-  background: url("/assets/images/kisspng-openclassrooms-marketing-business-management-logo-open-5b487ec131d465.6840017515314776972041.png")
+  background: url(~src/assets/images/kisspng-openclassrooms-marketing-business-management-logo-open-5b487ec131d465.6840017515314776972041.png)
     no-repeat right;
   background-size: contain;
 }
