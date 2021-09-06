@@ -9,7 +9,7 @@ export class ProjectsComponent implements OnInit {
   projects = [
     {
       title: 'NSI-MADA',
-      description: "J'ai créer ce site en 2020.",
+      description: "J'ai créé ce site en 2020.",
       techno: 'WORDPRESS, ELEMENTOR',
       img: './assets/images/nsi-mada.png',
     },
