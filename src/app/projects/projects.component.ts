@@ -11,7 +11,7 @@ export class ProjectsComponent implements OnInit {
       title: 'NSI-MADA',
       description: "J'ai créer ce site en 2020.",
       techno: 'WORDPRESS, ELEMENTOR',
-      img: '/assets/images/nsi-mada.png',
+      img: './assets/images/nsi-mada.png',
     },
     {
       title: 'GESTIONNAIRE DE STOCK PHARMACIE',
@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
         'Jai appris le Framwork Angular grâce à mon stage chez Young-dev.',
       techno:
         'ANGULAR, ANGULAR MATERIAL, NGX-BOOTSTRAP, NGX-DATATABLE, NGX-CHART',
-      img: '/assets/images/young-dev.png',
+      img: './assets/images/young-dev.png',
       class: 'react',
     },
     {
@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit {
         "Je me suis mis à l'épreuve de créer un Modal et un Carousel avec Javascript sans utiler un Framwork.",
       techno:
         'HTML5, CSS3, JAVASCRIPT',
-      img: '../../assets/images/vanilla.png',
+      img: './assets/images/vanilla.png',
     },
   ];
   constructor() {}
