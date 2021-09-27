@@ -3,16 +3,15 @@
 html,
 body {
     height: 100%;
-    --bg-color: linear-gradient(90deg, darkmagenta, rebeccapurple);
-    --title-color: yellow;
-    --link-color: white;
-    --name-color: whitesmoke;
-    --description-color: rgba(255, 255, 255, 0.85);
+    --bg-color: grey;
+    --title-color: rgba(0, 0, 0, 0.9);
+    --link-color: rgba(0, 0, 0, 0.8);
+    --name-color: rgba(0, 0, 0, 0.7);
+    --description-color: rgba(0, 0, 0, 0.7);
     --blur-color: white;
-    --sidebar-bg-color: #121212;
     --title-font-family: 'Dancing Script', cursive;
     --text-font-famil: "Roboto", "Helvetica Neue", sans-serif;
-    --icon-color: orangered;
+    --icon-color: #009884;
 }
 
 body {
