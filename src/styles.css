@@ -3,20 +3,25 @@
 html,
 body {
     height: 100%;
-    --bg-color: grey;
+    /* SIDEBAR */
+    --sidebar-important-color: #00ceb2;
+    --sidebar-bg-color: #121212;
+    --sidebar-icon-color: rgba(255, 255, 255, 0.2);
+    --sidebar-icon-active-color: rgba(255, 255, 255, 0.9);
+    --sidebar-sidebar-information-color: rgba(255, 255, 255, 0.9);
+    --sidebar-sidebar-description-color: rgba(255, 255, 255, 0.5);
+    /* PAGES */
     --title-color: rgba(0, 0, 0, 0.9);
     --link-color: rgba(0, 0, 0, 0.8);
     --name-color: rgba(0, 0, 0, 0.7);
     --description-color: rgba(0, 0, 0, 0.7);
     --blur-color: white;
-    --title-font-family: 'Dancing Script', cursive;
-    --text-font-famil: "Roboto", "Helvetica Neue", sans-serif;
-    --icon-color: #009884;
+    --title-font-family: 'Times New Roman', cursive;
+    --text-font-family: "Josefin Sans", "Roboto";
 }
 
 body {
     margin: 0;
-    font-family: "Roboto", "Helvetica Neue", sans-serif;
     box-sizing: border-box;
     padding: 0;
 }

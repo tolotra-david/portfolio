@@ -3,21 +3,14 @@
     <img src="./assets/images/DSC_0733.jpg" alt="tolotra david" />
   </div>
 </div>
-<h3 class="profile__name">{{ firstName | titlecase }}</h3>
-<h2 class="profile__statut">{{ statu | titlecase }}</h2>
+<h3 class="profile__name">{{ firstName | titlecase }}<br/>(23 ans)</h3>
+<h3 class="profile__statut">{{'Développeur frontend' | uppercase }} <br><span class="angular">(Angular)</span></h3>
 <ul class="navigation" #navigationMenu>
   <div class="background-active" #backgroundActive></div>
-  <li
-    *ngFor="let navigation of navigations"
-    routerLinkActive="active"
-    #link
-    (click)="givePosition(link); giveOutput()"
-  >
-  <mat-icon class="material__icon">{{ navigation.icon }}</mat-icon>
+  <li *ngFor="let navigation of navigations" routerLinkActive="active" #link (click)="givePosition(link); giveOutput()">
+    <mat-icon class="material__icon">{{ navigation.icon }}</mat-icon>
     <a routerLink="/{{ navigation.name }}">
       {{ navigation.name | titlecase }}
     </a>
   </li>
-  <li><hr class="navigation__separation"/></li>
-  <li class="navigation__code-source"><mat-icon class="material__icon">settings</mat-icon><a href="https://github.com/tolotra-david/portfolio" target="_blank">Voir code source</a></li>
 </ul>

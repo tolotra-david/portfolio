@@ -11,12 +11,13 @@
 }
 
 .sidebar {
-    width: 30%;
+    width: calc(100% / 3);
     height: 100%;
     overflow: hidden;
     opacity: 1;
     transition: all ease-out 60ms;
     background-color: var(--sidebar-bg-color);
+    box-shadow: 0 0 15px black;
 }
 
 .pages {

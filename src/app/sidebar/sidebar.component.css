@@ -3,6 +3,7 @@
 }
 
 /* IMAGE */
+
 .profile__img {
   height: 30%;
   display: flex;
@@ -15,7 +16,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 4px solid var(--link-color);
+  border: 4px solid var(--sidebar-important-color);
   overflow: hidden;
 }
 
@@ -23,19 +24,24 @@
   transform: scale(1.5);
 }
 
-/* INSIDE MENU */
+/* PROFILE DESCRIPTION */
 
 .profile__name {
   text-align: center;
   overflow: hidden;
-  color: var(--name-color);
+  color: var(--sidebar-sidebar-information-color);
+  margin-top: 0;
 }
 
 .profile__statut {
   color: white;
   text-align: center;
-  color: var(--title-color);
-  font-family: var(--title-font-family) !important;
+  color: var(--sidebar-important-color);
+  font-family: var(--title-font-family);
+}
+
+.profile__statut .angular {
+  color: var(--sidebar-sidebar-information-color);
 }
 
 .navigation {
@@ -59,34 +65,35 @@
 
 .navigation li a {
   display: block;
+  width: 100%;
   font-size: smaller;
-  color: var(--link-color);
+  font-family: var(--text-font-family);
+  color: var(--sidebar-sidebar-description-color);
+  padding: 0;
 }
 
 .material__icon {
-  font-size: smaller;
-  color: var(--icon-color);
+  color: var(--sidebar-icon-color);
+  margin: 0 5px 0 5px;
+  font-size: large;
+}
+
+.navigation li.active a {
+  color: var(--sidebar-icon-active-color);
 }
 
 li.active :first-child {
-  color: var(--link-color);
+  color: var(--sidebar-icon-active-color);
 }
 
-.navigation__separation{
+.navigation__separation {
   width: 70%;
-}
-
-.navigation__code-source{
-  border-radius: 8px;
-}
-
-.navigation__code-source:hover{
-  border: 1px solid var(--name-color);
 }
 
 .background-active {
   width: 100%;
-  background-image: var(--bg-color);
+  border: 2px solid var(--sidebar-important-color);
+  box-shadow: 0 0 3px var(--sidebar-icon-active-color);
   border-radius: 8px;
   position: absolute;
   transition-duration: 0.2s;
@@ -98,11 +105,14 @@ li.active :first-child {
 
 @media only screen and (max-width: 768px) {
   /* IMAGE */
+  .profile__img {
+    height: 25%;
+  }
+
   .img__container {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 4px solid lightcyan;
     overflow: hidden;
   }
 
@@ -110,5 +120,8 @@ li.active :first-child {
     transform: scale(1.5);
   }
 
-  
+  /* PROFILE DESCRIPTION */
+  .profile__name, .profile__statut {
+    font-size: medium;
+  }
 }
