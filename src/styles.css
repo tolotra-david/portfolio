@@ -1,21 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* site for the next color */
+/* https://coolors.co/fdc921-fdd85d-fffdf7-99d6ea-6798c0 */
 
-html,
 body {
-    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat';
+    /* src: url(assets/fonts/Montserrat/Montserrat-Black.ttf) format("opentype"); */
     --primary-color: #FDC921;
     --primary-variant-color: #FDD85D;
     --shades-color: #fff;
     --secondary-color: #060B0E;
     --secondary-variant-color: #99D6EA;
-}
-/* site for the next color */
-/* https://coolors.co/fdc921-fdd85d-fffdf7-99d6ea-6798c0 */
-body {
-    margin: 0;
-    font-family: "Roboto", "Helvetica Neue", sans-serif;
-    box-sizing: border-box;
-    padding: 0;
 }
 
 
