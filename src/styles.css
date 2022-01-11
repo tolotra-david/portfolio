@@ -2,19 +2,15 @@
 
 html,
 body {
-    height: 100%;
-    --bg-color: linear-gradient(90deg, darkmagenta, rebeccapurple);
-    --title-color: yellow;
-    --link-color: white;
-    --name-color: whitesmoke;
-    --description-color: rgba(255, 255, 255, 0.85);
-    --blur-color: white;
-    --sidebar-bg-color: #121212;
-    --title-font-family: 'Dancing Script', cursive;
-    --text-font-famil: "Roboto", "Helvetica Neue", sans-serif;
-    --icon-color: orangered;
+    height: 100vh;
+    --primary-color: #FDC921;
+    --primary-variant-color: #FDD85D;
+    --shades-color: #fff;
+    --secondary-color: #060B0E;
+    --secondary-variant-color: #99D6EA;
 }
-
+/* site for the next color */
+/* https://coolors.co/fdc921-fdd85d-fffdf7-99d6ea-6798c0 */
 body {
     margin: 0;
     font-family: "Roboto", "Helvetica Neue", sans-serif;
