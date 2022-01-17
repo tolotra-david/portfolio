@@ -52,7 +52,6 @@
   font-size: 18px;
   text-align: start;
   padding: 5px 10px;
-  margin-bottom: 2px;
   display: grid;
   grid-template-columns: 15px 100%;
   column-gap: 20px;
@@ -63,7 +62,6 @@
   font-size: smaller;
   color: var(--shades-color);
 }
-
 .material__icon {
   font-size: smaller;
   color: var(--primary-color);

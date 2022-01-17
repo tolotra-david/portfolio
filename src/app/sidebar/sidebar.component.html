@@ -11,7 +11,7 @@
     *ngFor="let navigation of navigations"
     routerLinkActive="active"
     #link
-    (click)="givePosition(link); giveOutput()"
+    (click)="giveOutput(); givePosition(link)"
   >
   <mat-icon class="material__icon">{{ navigation.icon }}</mat-icon>
     <a routerLink="/{{ navigation.name }}">

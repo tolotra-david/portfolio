@@ -1,32 +1,40 @@
-:host{
+:host {
     display: block;
 }
 
 .root {
-    width: 100%;
     display: flex;
     justify-content: flex-start;
     height: 100vh;
-    overflow: hidden;
 }
 
 .sidebar {
-    width: 25%;
-    height: 100%;
+    top: 0;
+    width: 20%;
+    height: 100vh;
     overflow: hidden;
-    opacity: 1;
-    transition: all ease-out 60ms;
     background-color: var(--secondary-color);
 }
 
-.pages {
-    width: 100%;
-    height: 100%;
-    overflow-Y: auto;
-    padding: 20px;
+.sidebar-mobile {
+    position: fixed;
+    top: 0;
+    width: 0;
+    opacity: 0;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    transition: all ease-in-out .2s;
+    z-index: 1000 !important;
 }
 
-.close{
+.pages {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.close {
+    display: none;
     position: fixed;
     right: 10px;
     top: 10px;
@@ -35,10 +43,32 @@
     z-index: 1000 !important;
 }
 
-@media only screen and (max-width: 770px){
-    .sidebar{
-        width: 0;
-        position: absolute;
-        z-index: 1000 !important;
-    }    
+@media only screen and (max-width: 1023px) {
+    .sidebar {
+        display: none;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .pages {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+    .sidebar {
+        display: none;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .pages {
+        width: 100%;
+    }
+
 }

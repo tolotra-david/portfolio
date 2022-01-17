@@ -25,7 +25,7 @@ export class SidebarComponent implements OnInit, AfterViewChecked {
   @ViewChild('backgroundActive')
   private backgroundActive: ElementRef;
 
-  @Output() isClicked = new EventEmitter<boolean>();
+  @Output() isClicked : EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor() {}
 
