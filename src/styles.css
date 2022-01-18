@@ -5,8 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    src: url(assets/fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf) format("opentype");
+    font-family: Calibri;
     --primary-color: #FDC921;
     --primary-variant-color: #FDD85D;
     --shades-color: #fff;
@@ -28,3 +27,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+  }
