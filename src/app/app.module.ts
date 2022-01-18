@@ -15,6 +15,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { AboutComponent } from './about/about.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
