@@ -8,6 +8,8 @@ import {
   EventEmitter,
 } from '@angular/core';
 
+import { faHome,faIdBadge,faUserAlt,faWrench,IconDefinition } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -16,9 +18,9 @@ import {
 export class SidebarComponent implements OnInit, AfterViewChecked {
   name: string = 'rakotorina';
   firstName: string = 'tolotra david';
-  statu: string = 'développeur front-end';
+  statut: string = 'développeur front-end';
   navigations: Array<any> = [];
-
+  
   @ViewChild('navigationMenu')
   private navigationMenu: ElementRef;
 
@@ -32,19 +34,19 @@ export class SidebarComponent implements OnInit, AfterViewChecked {
   ngOnInit(): void {
     this.navigations = [
       {
-        icon: 'home',
+        icon: faHome,
         name: 'accueil',
       },
       {
-        icon: 'bookmark',
+        icon: faIdBadge,
         name: 'competences',
       },
       {
-        icon: 'build',
+        icon: faWrench,
         name: 'projets',
       },
       {
-        icon: 'person',
+        icon: faUserAlt,
         name: 'a-propos',
       },
     ];
