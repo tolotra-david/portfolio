@@ -1,7 +1,7 @@
-.home__root {
+:host {
+  height: 100%;
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 .home__description__container {
@@ -17,11 +17,6 @@
 
 .description__name {
   color: var(--name-color);
-}
-
-.description__slogan,
-.description__name {
-  font-style: italic;
 }
 
 .description__button {

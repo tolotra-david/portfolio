@@ -1,16 +1,13 @@
-<div class="home__root">
-  <div class="home__description__container">
-    <h1 class="description__slogan">
-      "J’aime énormément mon métier et prends un plaisir à exercer."
-    </h1>
-    <h1 class="description__name">
-      {{ firstName | uppercase }}&nbsp;{{ lastName | titlecase }}
-    </h1>
-    <div class="description__button">
-      <button>
-        <a [routerLink]="['/competences']">Voir mes compétences &rarr;</a>
-      </button>
-    </div>
+<div class="home__description__container">
+  <h1 class="description__slogan">
+    "J’aime énormément mon métier et prends un plaisir à exercer."
+  </h1>
+  <h1 class="description__name">
+    {{ firstName | uppercase }}&nbsp;{{ lastName | titlecase }}
+  </h1>
+  <div class="description__button">
+    <button>
+      <a [routerLink]="['/competences']">Voir mes compétences &rarr;</a>
+    </button>
   </div>
 </div>
-
