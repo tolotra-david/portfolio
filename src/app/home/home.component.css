@@ -1,85 +1,33 @@
 :host {
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.home__description__container {
-  width: 50%;
-}
-
-.description__slogan {
-  color: var(--title-color);
-  text-align: justify;
-  font-family: var(--title-font-family);
-  font-size: 40px;
-}
-
-.description__name {
-  color: var(--name-color);
-}
-
-.description__button {
-  width: 50%;
-  margin: auto;
-}
-
-.description__button button {
-  display: inline-block;
+.home-description-container {
   width: 100%;
-  background-image: var(--bg-color);
-  padding: 10px;
-  border: none;
-  box-shadow: 0px 0px 4px var(--blur-color);
+  padding: 0 0 0 40px;
+  z-index: 1;
 }
 
-.description__button button a {
-  color: var(--link-color);
+.home-description-container .description-slogan {
+  color: var(--title-color);
+  font-size: 50px;
 }
 
-/* PHONE */
-@media only screen and (max-width: 768px) {
-  .home__root {
-    background-position: center center;
-    background-size: 100%;
-    justify-content: center;
-    align-items: start;
-  }
-
-  .home__description__container {
-    width: 80%;
-    height: 80%;
-    position: relative;
-  }
-  
-  .description__slogan {
-    background-image: var(--bg-color);
-    text-align: left;
-    font-size: 30px;
-  }
-
-  .description__name {
-    font-size: medium;
-    background-image: var(--bg-color);
-  }
-
-  .description__button {
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .description__button button {
-    display: inline-block;
-    width: 100%;
-    background-image: var(--bg-color);
-    padding: 10px;
-    border: none;
-    box-shadow: 0px 0px 4px var(--blur-color);
-  }
-
-  .description__button button a {
-    color: var(--link-color);
-  }
+.home-description-container .description-slogan .name {
+  color: var(--primary-color);
 }
+
+.home-description-container a {
+  background-color: var(--secondary-variant-color);
+  display: inline-block;
+  padding: 20px;
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+
+
+
