@@ -5,6 +5,7 @@ import {
   HostListener,
   OnInit,
   ViewChild,
+  ViewChildren
 } from '@angular/core';
 
 @Component({
@@ -13,34 +14,52 @@ import {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  isClose: boolean = true
+  isMobile: boolean = false;
+  isClose: boolean = true;
+  private windowWidth: number = 0;
+
   @ViewChild('sidebar')
   private sidebar: ElementRef;
-  constructor() { }
+
+  @HostListener('window:resize', ['$event'])
+  private handleResize(event: any) {
+    this.windowWidth = event.target.innerWidth;
+    this.testIsMobile();
+  }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
+    this.windowWidth = window.innerWidth;
+    this.testIsMobile();
   }
 
-
-  isHidden(isClicked: boolean):void {
-    if(isClicked){
-      this.isClose = true
-      this.sidebar.nativeElement.style.width = '0';
-      this.sidebar.nativeElement.style.opacity = '0';
+  private testIsMobile() {
+    if (this.windowWidth <= 768) {
+      this.isMobile = true;
+      this.sidebar.nativeElement.style.width = 0;
+    } else {
+      this.isMobile = false;
+      this.sidebar.nativeElement.style.width = '20%';
     }
   }
 
-  onOpenMenu(): void {
-    this.isClose = !this.isClose
-    if (this.isClose) {
-      this.sidebar.nativeElement.style.width = '0';
-      this.sidebar.nativeElement.style.opacity = '0';
-    } else {
+  public onOpenMenu() {
+    this.isClose = !this.isClose;
+    if (!this.isClose) {
       this.sidebar.nativeElement.style.width = '100%';
-      this.sidebar.nativeElement.style.opacity = '1';
+    } else {
+      this.sidebar.nativeElement.style.width = 0;
+    }
+  }
+
+  public handleClickSidebar(isClicked: boolean) {
+    if (isClicked && this.windowWidth <= 768) {
+      this.sidebar.nativeElement.style.width = 0;
+      this.isClose = true;
     }
   }
 }

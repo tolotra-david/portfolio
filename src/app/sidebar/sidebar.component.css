@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-/* IMAGE */
+/* ---------------------------- profil ---------------------------- */
 .profile__img {
   height: 25%;
   display: flex;
@@ -23,8 +23,6 @@
   transform: scale(1.5);
 }
 
-/* INSIDE MENU */
-
 .profile__name {
   text-align: center;
   overflow: hidden;
@@ -38,63 +36,39 @@
   font-size: 20px;
 }
 
-.navigation {
-  margin: 0;
+/* ---------------------------- end profil ---------------------------- */
+
+/* ---------------------------- navigation ---------------------------- */
+#navigation .navigation-wrapper {
+  list-style: none;
   padding: 0;
-  position: relative;
-  width: 100%;
-  margin: auto;
-  z-index: 10;
 }
 
-.navigation li {
-  list-style-type: none;
-  font-size: 18px;
-  text-align: start;
-  padding: 5px 10px;
-  display: grid;
-  grid-template-columns: 15px 100%;
-  column-gap: 20px;
-}
-
-.navigation li a {
+#navigation .navigation-wrapper .navigation-item a {
   display: block;
-  font-size: smaller;
+  padding: 0.5rem 1.5rem;
   color: var(--shades-color);
 }
-.material__icon {
-  font-size: smaller;
-  color: var(--primary-color);
+
+#navigation .navigation-wrapper .navigation-item a fa-icon {
+  margin-right: 1rem;
 }
 
-li.active a, li.active i{
-  color: var(--secondary-color) !important;
+#navigation .navigation-wrapper .navigation-item.active-link {
+  background-color: var(--primary-color);
 }
 
-.navigation__separation{
-  width: 70%;
+#navigation .navigation-wrapper .navigation-item.active-link a {
+  color: var(--secondary-color);
 }
 
-.navigation__code-source{
-  border-radius: 8px;
-}
+/* ---------------------------- end navigation ---------------------------- */
 
-.navigation__code-source:hover{
-  border: 1px solid var(--primary-color);
-}
-
-.background-active {
-  width: 100%;
-  background-color: var(--primary-variant-color);
-  position: absolute;
-  transition-duration: 0.2s;
-  margin: auto;
-  z-index: -1;
-}
 
 /* RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
+
   /* IMAGE */
   .img__container {
     width: 80px;
@@ -108,5 +82,4 @@ li.active a, li.active i{
     transform: scale(1.5);
   }
 
-  
 }

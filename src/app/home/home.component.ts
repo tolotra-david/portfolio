@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit {
           enable: true,
           area: 1000
         },
-        value: 25
+        value: 35
       },
       opacity: {
         value: 1

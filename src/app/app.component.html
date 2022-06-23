@@ -1,15 +1,12 @@
 <div class="root">
-  <div class="sidebar">
-    <app-sidebar></app-sidebar>
+  <div class="sidebar" #sidebar>
+    <app-sidebar (selectedLink)="handleClickSidebar($event)"></app-sidebar>
   </div>
   <div class="pages">
     <router-outlet></router-outlet>
   </div>
 </div>
-<div class="sidebar-mobile"  #sidebar>
-  <app-sidebar (isClicked)="isHidden($event)"></app-sidebar>
-</div>
-<button mat-mini-fab class="close" (click)="onOpenMenu()">
-  <mat-icon  *ngIf="isClose">menu</mat-icon>
-  <mat-icon  *ngIf="!isClose">close</mat-icon>
+<button class="btn-close" *ngIf="isMobile" (click)="onOpenMenu()">
+  <i-bs name="list" width="32" height="32" *ngIf="isClose"></i-bs>
+  <i-bs name="x-lg" width="32" height="32" *ngIf="!isClose"></i-bs>
 </button>

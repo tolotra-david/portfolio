@@ -5,17 +5,10 @@
 </div>
 <h3 class="profile__name">{{ firstName | titlecase }}</h3>
 <h2 class="profile__statut">{{ statut | titlecase }}</h2>
-<ul class="navigation" #navigationMenu>
-  <div class="background-active" #backgroundActive></div>
-  <li
-    *ngFor="let navigation of navigations"
-    routerLinkActive="active"
-    #link
-    (click)="giveOutput(); givePosition(link)"
-  >
-  <fa-icon [icon]="navigation.icon"></fa-icon>
-    <a routerLink="/{{ navigation.name }}">
-      {{ navigation.name | titlecase }}
-    </a>
-  </li>
-</ul>
+<nav id="navigation">
+  <ul class="navigation-wrapper">
+    <li class="navigation-item" *ngFor="let navigation of navigations" routerLinkActive="active-link" (click)="handleSelectedLink()">
+      <a routerLink="/{{ navigation.name }}"><fa-icon [icon]="navigation.icon"></fa-icon>&nbsp;{{ navigation.name | titlecase }}</a>
+    </li>
+  </ul>
+</nav>
