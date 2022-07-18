@@ -6,7 +6,7 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-<button class="btn-close" *ngIf="isMobile" (click)="onOpenMenu()">
-  <i-bs name="list" width="32" height="32" *ngIf="isClose"></i-bs>
-  <i-bs name="x-lg" width="32" height="32" *ngIf="!isClose"></i-bs>
+<button class="close-btn" *ngIf="isMobile" (click)="onOpenMenu()" mat-fab>
+  <mat-icon *ngIf="isClose">menu</mat-icon>
+  <mat-icon *ngIf="!isClose">close</mat-icon>
 </button>

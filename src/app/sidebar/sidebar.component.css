@@ -2,6 +2,11 @@
   height: 100%;
 }
 
+button {
+  background-color: transparent;
+  color: white;
+}
+
 /* ---------------------------- profil ---------------------------- */
 .profile__img {
   height: 25%;
@@ -48,10 +53,6 @@
   display: block;
   padding: 0.5rem 1.5rem;
   color: var(--shades-color);
-}
-
-#navigation .navigation-wrapper .navigation-item a fa-icon {
-  margin-right: 1rem;
 }
 
 #navigation .navigation-wrapper .navigation-item.active-link {

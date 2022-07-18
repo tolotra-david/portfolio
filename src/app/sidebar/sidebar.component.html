@@ -8,7 +8,7 @@
 <nav id="navigation">
   <ul class="navigation-wrapper">
     <li class="navigation-item" *ngFor="let navigation of navigations" routerLinkActive="active-link" (click)="handleSelectedLink()">
-      <a routerLink="/{{ navigation.name }}"><fa-icon [icon]="navigation.icon"></fa-icon>&nbsp;{{ navigation.name | titlecase }}</a>
+      <a routerLink="/{{ navigation.name }}"><button mat-button><mat-icon>{{navigation.icon}}</mat-icon></button>&nbsp;{{ navigation.name | titlecase }}</a>
     </li>
   </ul>
 </nav>

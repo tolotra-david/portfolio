@@ -8,7 +8,6 @@ import {
   EventEmitter,
 } from '@angular/core';
 
-import { faHome, faIdBadge, faUserAlt, faWrench, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -18,7 +17,7 @@ import { faHome, faIdBadge, faUserAlt, faWrench, IconDefinition } from '@fortawe
 export class SidebarComponent implements OnInit {
   name: string = 'rakotorina';
   firstName: string = 'tolotra david';
-  statut: string = 'développeur front-end';
+  statut: string = 'Frontend developer';
   navigations: Array<any> = [];
   @Output() selectedLink = new EventEmitter<boolean>();
 
@@ -27,20 +26,20 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.navigations = [
       {
-        icon: faHome,
-        name: 'accueil',
+        icon: 'home',
+        name: 'home',
       },
       {
-        icon: faIdBadge,
-        name: 'competences',
+        icon: 'engineering',
+        name: 'skills',
       },
       {
-        icon: faWrench,
-        name: 'projets',
+        icon: 'insert_chart_outlined',
+        name: 'projects',
       },
       {
-        icon: faUserAlt,
-        name: 'a-propos',
+        icon: 'perm_identity',
+        name: 'about',
       },
     ];
   }
