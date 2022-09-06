@@ -1,9 +1,13 @@
-<ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"
-  (particlesInit)="particlesInit($event)"></ng-particles>
+<app-ng-particle></app-ng-particle>
 <div class="home-description-container">
   <h1 class="description-slogan">
     Hi, I'M <span class="name">DAVID</span><br />
     I'M FRONTEND DEVELOPER
   </h1>
-  <a class="link-skills" [routerLink]="['/skills']">Go to skills &rarr;</a>
+  <a class="learn-more" [routerLink]="['/skills']">
+    <span class="circle" aria-hidden="true">
+    <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </a>
 </div>

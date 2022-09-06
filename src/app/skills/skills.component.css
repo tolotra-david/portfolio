@@ -1,27 +1,29 @@
-h1 {
-  color: var(--title-color);
-  font-family: var(--title-font-family);
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: var(--secondary-variant-color); */
 }
 
-.description {
-  margin-top: 20px;
-  color: var(--description-color);
+.chart-container {
+  position: relative;
 }
 
-.skills {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  row-gap: 20px;
-  column-gap: 10%;
-  margin-bottom: 60px;
+.card {
+  background-color: var(--secondary-color);
+  color: white;
+  transition: .3s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.03);
 }
 
 
-/* RESPONSIVE */
-
-@media only screen and (max-width: 768px){
-  .skills {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+@media screen and (max-width: 768px) {
+  :host {
+    height: auto;
+    padding-top: 36px;
   }
 }

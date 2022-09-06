@@ -17,6 +17,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { AboutComponent } from './about/about.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgChartsModule } from 'ng2-charts';
+import { SkillItemComponent } from './components/skill-item/skill-item.component';
+import { NgParticleComponent } from './components/ng-particle/ng-particle.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProjectsComponent,
     ProgressBarComponent,
     SingleProjectComponent,
-    AboutComponent
+    AboutComponent,
+    SkillItemComponent,
+    NgParticleComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +43,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatIconModule,
     FontAwesomeModule,
     NgParticlesModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

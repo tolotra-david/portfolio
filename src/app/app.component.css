@@ -38,4 +38,7 @@
         position: fixed;
         top: 0;
     }
+    .pages {
+        width: 100%;
+    }
 }

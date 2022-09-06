@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-6 col-md-3 mb-5" *ngFor="let skill of skills">
+        <img src="../../../assets/icons/{{skill.iconLink}}" alt="icon">
+        <ul class="mt-3">
+            <li *ngFor="let name of skill.names">{{name | titlecase}}</li>
+        </ul>
+    </div>
+</div>
