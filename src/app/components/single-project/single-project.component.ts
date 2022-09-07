@@ -12,9 +12,9 @@ export class SingleProjectComponent implements OnInit {
   @Input()
   description: string
   @Input()
-  techno: string
+  link: string
   @Input()
-  imgSrc: string
+  imgName: string
   constructor() { }
 
   ngOnInit(): void {

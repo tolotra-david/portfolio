@@ -1,31 +1,3 @@
-.project__title {
-  text-decoration-line: underline;
-  color: var(--name-color);
-  font-weight: lighter;
-}
-
-.project__description {
-  color: var(--description-color);
-}
-
-.project__techno {
-  color: var(--description-color);
-}
-
-.project__techno-name {
-  color: var(--title-color);
-}
-
-.project__image {
-  margin-bottom: 40px;
-}
-
-/* RESPONSIVE */
-
-@media only screen and (max-width: 768px) {
-  .project__techno,
-  .project__techno-name,
-  .project__description {
-    font-size: small;
-  }
+h5 {
+  color: var(--secondary-variant-color);
 }

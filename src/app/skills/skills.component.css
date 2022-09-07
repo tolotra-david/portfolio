@@ -10,16 +10,6 @@
   position: relative;
 }
 
-.card {
-  background-color: var(--secondary-color);
-  color: white;
-  transition: .3s ease-in-out;
-}
-
-.card:hover{
-  transform: scale(1.03);
-}
-
 
 @media screen and (max-width: 768px) {
   :host {

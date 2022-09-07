@@ -6,8 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./skill-item.component.css']
 })
 export class SkillItemComponent implements OnInit {
+
   @Input()
-  public skills: { iconLink: string, names: string[]; }[];
+  public iconLink: string;
+  @Input()
+  public names: string[];
   constructor() { }
 
   ngOnInit(): void {

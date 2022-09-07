@@ -16,11 +16,11 @@ body {
 
 /* NEED for ajusting the images display */
 img {
-    display           : block;
-    height            : 100%;
-    width             : 100%;
-    object-fit        : cover;
-    object-position   : center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 a {
@@ -30,4 +30,14 @@ a {
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-  }
+}
+
+.card {
+    background-color: var(--secondary-color);
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}

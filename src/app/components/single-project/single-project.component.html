@@ -1,9 +1,9 @@
-<h3 class="project__title">{{ title }}</h3>
-<p class="project__description">{{ description }}</p>
-<p class="project__techno">
-  Voici les technologies web que j'ai utilisées:
-  <i class="project__techno-name">{{ techno }}</i>
-</p>
-<div class="project__image">
-  <img [src]="imgSrc" [alt]="techno" />
-</div>
+<a href="{{link}}">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{title | titlecase}}</h5>
+      <i>{{description | titlecase}}</i>
+      <img src="../../../assets/images/{{imgName}}.jpg" class="img-fluid" alt="image">
+    </div>
+  </div>
+</a>

@@ -6,26 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
-  projects = [
-    {
-      title: 'GESTIONNAIRE DE STOCK PHARMACIE',
-      description:
-        'Jai appris le Framwork Angular grâce à mon stage chez Young-dev.',
-      techno:
-        'ANGULAR, ANGULAR MATERIAL, NGX-BOOTSTRAP, NGX-DATATABLE, NGX-CHART',
-      img: './assets/images/young-dev.png',
-      class: 'react',
-    },
-    {
-      title: 'MODAL et CAROUSEL',
-      description:
-        "Je me suis mis à l'épreuve de créer un Modal et un Carousel avec Javascript sans utiliser un Framwork.",
-      techno:
-        'HTML5, CSS3, JAVASCRIPT',
-      img: './assets/images/vanilla.png',
-    },
-  ];
-  constructor() {}
 
-  ngOnInit(): void {}
+  public projects: { title: string, description: string, link: string, imgName: string; }[];
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.projects = [
+      { title: 'carousel', description: 'Frontend Developer', link: 'https://gitlab.com/tolotradavid2/gallery', imgName: 'carousel' },
+      { title: 'caisse d\epargne madagascar', description: 'wordpress maintenance', link: 'https://www.caissedepargne.mg/', imgName: 'cem' },
+      { title: 'maison et tradition', description: 'wordpress developer', link: 'https://www.maisonetradition.mg/', imgName: 'maison-tradition' },
+      { title: 'NSI madagascar', description: 'wordpress developer', link: 'https://nsi-mada.com/', imgName: 'nsi-mada' },
+      { title: 'sunref madagascar', description: 'wordpress developer', link: 'https://sunref.solidis.org/', imgName: 'sunref' },
+    ];
+  }
 }

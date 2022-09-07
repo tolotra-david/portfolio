@@ -13,7 +13,13 @@
                 <div class="col-12 col-md-6 my-5">
                         <div class="card h-100">
                                 <div class="card-body py-5">
-                                        <app-skill-item [skills]="skills"></app-skill-item>
+                                        <div class="row">
+                                                <div class="col-6 col-md-3 mb-5" *ngFor="let skill of skills">
+                                                        <app-skill-item [iconLink]="skill.iconLink"
+                                                                [names]="skill.names">
+                                                        </app-skill-item>
+                                                </div>
+                                        </div>
                                 </div>
                         </div>
                 </div>
