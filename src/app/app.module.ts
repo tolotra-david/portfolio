@@ -13,7 +13,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { SingleProjectComponent } from './single-project/single-project.component';
+import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { AboutComponent } from './about/about.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgChartsModule } from 'ng2-charts';
