@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'skills',
-    component: SkillsComponent,
+    loadChildren: () => import('./pages/skills/skills.module').then(m => m.SkillsModule)
   },
   {
     path: 'about',
