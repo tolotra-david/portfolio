@@ -11,8 +11,6 @@ import { NgParticlesModule } from 'ng-particles';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgParticleComponent } from './components/ng-particle/ng-particle.component';
 
@@ -21,8 +19,6 @@ import { NgParticleComponent } from './components/ng-particle/ng-particle.compon
     AppComponent,
     SidebarComponent,
     HomeComponent,
-    ProjectsComponent,
-    SingleProjectComponent,
     NgParticleComponent
   ],
   imports: [
