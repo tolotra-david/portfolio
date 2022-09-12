@@ -9,12 +9,12 @@ import { NgParticlesModule } from 'ng-particles';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HomeComponent } from './home/home.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './pages/about/about.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgChartsModule } from 'ng2-charts';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
