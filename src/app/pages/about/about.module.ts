@@ -12,7 +12,7 @@ import { AboutRoutingModule } from './about-routing.module';
   imports: [
     CommonModule,
     MatIconModule,
-    AboutRoutingModule
+    AboutRoutingModule,
   ]
 })
 export class AboutModule { }

@@ -41,3 +41,7 @@ h1, h2, h3, h4, h5 {
 .card:hover {
     transform: scale(1.03);
 }
+
+.card-footer {
+    border-top: 0;
+}

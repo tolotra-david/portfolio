@@ -1,135 +1,55 @@
-/* GLOBAL STYLE */
-
-.underline {
-  text-decoration: underline;
-}
-
-ul li {
-  color: var(--name-color);
-}
-
-.end {
-  margin-bottom: 40px;
-}
-
-/* GLOBAL STYLE */
-
-.about__title {
-  color: var(--title-color);
-  font-family: var(--title-font-family);
-  text-align: center;
-}
-
-.about__name {
-  color: var(--name-color);
-  text-align: center;
-  font-size: 30px;
-}
-
-.about__description {
-  color: var(--description-color);
-  text-align: justify;
-}
-
-.about__personnal-container {
+:host {
+  height: 100vh;
   display: flex;
-  justify-content: flex-start;
-  background: url("~src/assets/images/information-card.png")
-    no-repeat center right;
-  background-size: contain;
+  align-items: center;
+  justify-content: center;
 }
 
-.about__personnal-detail {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  color: var(--name-color);
-  grid-auto-rows: 40px;
-  padding-left: 40px;
+.card-title {
+  color: var(--secondary-variant-color);
 }
 
-.about__personnal-detail mat-icon {
-  font-size: 18px;
-  color: var(--icon-color);
-}
-
-.about__link {
+.icon-link-container {
+  list-style: none;
   display: flex;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 10px 0 6px 0;
 }
 
-.about__link li {
-  list-style-type: none;
+.icon-link-container li {
+  margin-right: 32px;
 }
 
-.about__link li a {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
+img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: .3s ease-in-out;
 }
 
-.about__link li a:hover {
-  transform: scale(1.4);
-  transition-duration: 300ms;
+img:hover {
+  transform: scale(1.2);
 }
 
-.about__code-source a {
-  font-size: 20px;
-  font-family: var(--title-font-family);
-  color: var(--title-color);
+.card-footer a {
+  background-color: transparent;
 }
 
-.about__study {
-  color: var(--name-color);
-  text-align: center;
-  margin-bottom: 40px;
+#download-cv {
+  animation: buttonScale 2.5s infinite;
+  box-shadow: 0 0 1em .25em var(--secondary-variant-color),
+    0 0 4em 1em var(--secondary-variant-color);
+  text-shadow: 0 0 .5em var(--secondary-variant-color);
 }
 
-.about__formation {
-  color: var(--title-color);
-  font-family: var(--title-font-family);
-}
-
-.about__formation-openclassrooms {
-  background: url("~src/assets/images/kisspng-openclassrooms-marketing-business-management-logo-open-5b487ec131d465.6840017515314776972041.png")
-    no-repeat right;
-  background-size: contain;
-}
-
-/* RESPONSIVE */
-
-@media only screen and (max-width: 768px) {
-  ul li {
-    font-size: small;
-  }
-  .about__title {
-    text-align: center;
-    font-size: medium;
-  }
-  .about__name {
-    text-align: center;
-    font-size: medium;
-  }
-  .about__description {
-    font-size: small;
+@keyframes buttonScale {
+  0% {
+    transform: scale(1);
   }
 
-  .about__study{
-    font-size: medium;
+  50% {
+    transform: scale(1.1);
   }
 
-  .about__personnal-detail {
-    width: 100%;
-    font-size: small;
-  }
-
-  .about__personnal-container {
-    background: none;
-  }
-  .about__formation-openclassrooms {
-    background: none
+  100% {
+    transform: scale(1);
   }
 }
