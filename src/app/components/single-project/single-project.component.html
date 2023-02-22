@@ -1,9 +1,13 @@
-<a href="{{link}}">
+<a href="{{ link }}" target="_blank">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">{{title | titlecase}}</h5>
-      <i>{{description | titlecase}}</i>
-      <img src="./assets/images/{{imgName}}.jpg" class="img-fluid" alt="image">
+      <h5 class="card-title">{{ title | titlecase }}</h5>
+      <i>{{ description | titlecase }}</i>
+      <img
+        src="./assets/images/{{ imgName }}.jpg"
+        class="img-fluid"
+        alt="image"
+      />
     </div>
   </div>
 </a>
